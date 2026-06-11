@@ -1,71 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1 {
-            color: #8cc20d;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 3rem;
-            text-align: center;
-            margin: 50px auto;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            background-color: #f0f8ff; 
-            text-decoration: none;
-            border-bottom: 4px solid #8cc20d;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 80%;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        h1:hover {
-            transform: scale(1.02);
-        }
+  <title>Título de la página</title>  
+  <meta charset="UTF-8">
+  <style>
+    h2 {
+      color: #ff0000;
+      background-color: #ffff00;
+    }
 
-        h2 {
-            color: #043eff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 2.5rem;
-            text-align: center;
-            margin: 50px auto;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            background-color: #fff2cc; 
-            text-decoration: none;
-            border-left: 8px solid #043eff;
-            border-right: 8px solid #043eff;
-            padding: 15px 30px;
-            max-width: 75%;
-            font-weight: bold;
-            box-shadow: inset 0 0 10px rgba(4, 62, 255, 0.1);
-        }
+    h3 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 30px;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .sub-tit-comun {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+    }
 
-        h3 {
-            color: #ff0404;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 2rem;
-            text-align: center;
-            margin: 50px auto;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            background-color: #ffe6e6; 
-            text-decoration: none;
-            padding: 12px;
-            border: 2px dashed #ff0404;
-            outline: 4px solid #ffe6e6;
-            max-width: 60%;
-            font-style: italic;
-        }
-    </style>
+    h4, .sub1-azul, .sub2-azul {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #0000ff;
+    }
+
+    h5, .escalonado-2, .escalonado-3, .escalonado-4, .escalonado-5, .escalonado-6 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h5 { font-size: 40px; }
+    .escalonado-2 { font-size: 30px; }
+    .escalonado-3 { font-size: 25px; }
+    .escalonado-4 { font-size: 20px; }
+    .escalonado-5 { font-size: 15px; }
+    .escalonado-6 { font-size: 10px; }
+
+    h6 {
+      color: #ff0000;
+      text-align: left;
+      text-decoration: underline;
+    }
+    .estilo-centro {
+      color: #dd0000;
+      text-align: center;
+      text-decoration: underline;
+    }
+    .estilo-derecha {
+      color: #aa0000;
+      text-align: right;
+      text-decoration: underline;
+    }
+
+    .ultimo-titulo {
+      letter-spacing: 10px;
+      word-spacing: 30px;
+      text-transform: capitalize;
+    }
+    p {
+      text-indent: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>estilos para h1</h1>
-    <h2>estilos para h2</h2>
-    <h3>estilos para h3</h3>
+
+  <h1 style="color:#ff0000;background-color:#ffff00">
+    Este mensaje es de color rojo sobre fondo amarillo.
+  </h1>
+
+  <h2>Primer título</h2>
+  <h2>Segundo título</h2>
+
+  <h3>Título de nivel 1</h3>
+  <div class="sub-tit-comun">Título de nivel 2</div>
+
+  <h4>Título de nivel 1</h4>
+  <div class="sub1-azul">Título de nivel 2</div>
+  <div class="sub2-azul">Título de nivel 3</div>
+
+  <h5>Título de nivel 1</h5>
+  <div class="escalonado-2">Título de nivel 2</div>
+  <div class="escalonado-3">Título de nivel 3</div>
+  <div class="escalonado-4">Título de nivel 4</div>
+  <div class="escalonado-5">Título de nivel 5</div>
+  <div class="escalonado-6">Título de nivel 6</div>
+
+  <h6>Título de nivel 1.</h6>
+  <div class="estilo-centro">Título de nivel 2.</div>
+  <div class="estilo-derecha">Título de nivel 3.</div>
+
+  <div class="ultimo-titulo">Este es un título de nivel 1</div>
+  <p>Todo el texto siguiente se encuentra encerrado en el elemento de párrafo 
+  y con el objetivo de ver el efecto de la propiedad text-indent.
+  La propiedad text-indent podemos inicializarla con un valor positivo, 
+  como es el caso actual o podemos inicializarla con un valor negativo lo que 
+  provocará que el texto de la primera línea del párrafo 
+  comience en una columna inferior al de todo el bloque. </p>
+
 </body>
 </html>
